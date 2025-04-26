@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 100px;
+}
+
+.choose,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.marks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.mark:hover {
+  transform: scale(1.1);
+  background-color: #87f768;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(73, 92, 143);
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+}
+
+.box {
+  height: 90px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.box:hover {
+  background-color: #9bf56b;
+}
+
+.text {
+  font-size: 50px;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.reset:hover {
+  background-color: #49a3f8;
+  scale: 1.1;
+  color: white;
+  transition: scale 0.2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .box {
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+  }
+
+  .mark {
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
