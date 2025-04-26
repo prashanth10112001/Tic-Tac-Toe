@@ -92,6 +92,7 @@ const checkWin = (playerMark) => {
   if (filledPositions.length === 9) {
     document.querySelector(".message").innerHTML = "DRAW";
     gameOver = true;
+    // also button for draw
     document.body.querySelector(".reset").style.display = "block";
     document.body.querySelector(".reset").innerHTML = "Play Again!!!";
   }
